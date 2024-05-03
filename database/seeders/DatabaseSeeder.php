@@ -65,6 +65,16 @@ class DatabaseSeeder extends Seeder
                 'is_admin' => false
             ]
         );
+        User::create(
+            [
+                'name' => 'Dwiponco Suripto',
+                'email' => 'DwiponcoSuripto@gmail.com',
+                'email_verified_at' => now(),
+                'password' => 'ponco123',
+                'remember_token' => Str::random(10),
+                'is_admin' => false
+            ]
+        );
 
         User::factory(100)->create();
         Todo::factory(500)->create();
