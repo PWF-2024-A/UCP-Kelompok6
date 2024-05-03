@@ -6,6 +6,7 @@ namespace Database\Seeders;
 
 use App\Models\Todo;
 use App\Models\User;
+use App\Models\Category;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
 
@@ -78,5 +79,6 @@ class DatabaseSeeder extends Seeder
 
         User::factory(100)->create();
         Todo::factory(500)->create();
+        Category::factory(100)->create();
     }
 }
