@@ -42,7 +42,7 @@ class DatabaseSeeder extends Seeder
                 'email_verified_at' => now(),
                 'password' => 'aldikasep',
                 'remember_token' => Str::random(10),
-                'is_admin' => false
+                'is_admin' => true
             ]
         );
         User::create(
@@ -52,7 +52,7 @@ class DatabaseSeeder extends Seeder
                 'email_verified_at' => now(),
                 'password' => 'davin123',
                 'remember_token' => Str::random(10),
-                'is_admin' => false
+                'is_admin' => true
             ]
         );
         User::create(
@@ -62,7 +62,7 @@ class DatabaseSeeder extends Seeder
                 'email_verified_at' => now(),
                 'password' => 'ricco123',
                 'remember_token' => Str::random(10),
-                'is_admin' => false
+                'is_admin' => true
             ]
         );
         User::create(
@@ -72,7 +72,7 @@ class DatabaseSeeder extends Seeder
                 'email_verified_at' => now(),
                 'password' => 'ponco123',
                 'remember_token' => Str::random(10),
-                'is_admin' => false
+                'is_admin' => true
             ]
         );
 
