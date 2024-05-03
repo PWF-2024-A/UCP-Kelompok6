@@ -34,6 +34,18 @@ class DatabaseSeeder extends Seeder
                 'is_admin' => true,
             ]
         );
+
+        User::create(
+            [
+                'name' => 'Mochamad Aldi Raihan Fachrizal',
+                'email' => 'aldiraihan@gmail.com',
+                'email_verified_at' => now(),
+                'password' => 'aldikasep',
+                'remember_token' => Str::random(10),
+                'is_admin' => false
+            ]
+        );
+
         User::factory(100)->create();
         Todo::factory(500)->create();
     }
