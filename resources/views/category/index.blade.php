@@ -48,8 +48,11 @@
                             @forelse ($categories as $category)
                                 <tr class="odd:bg-white odd:dark:bg-gray-800 even:bg-gray-50 even:dark:bg-gray-700">
                                     <td scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white">
-                                        {{ $category->title }}
-                                    </td>
+                                    <a href="{{ route('category.edit', $category) }}" class="hover:underline">{{ $category->title }}</a>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <p>{{ $category->todos()->count() }}</p>
+                            </td>
                                     <td class="px-6 py-4">
                                         <div class="flex space-x-3">
                                             <form action="{{ route('category.destroy', $category) }}" method="Post">
