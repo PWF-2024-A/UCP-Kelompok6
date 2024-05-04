@@ -52,8 +52,6 @@
                                     </td>
                                     <td class="px-6 py-4">
                                         <div class="flex space-x-3">
-                                            <a href="{{ route('category.edit', $category) }}"
-                                                class="text-indigo-600 dark:text-indigo-400 hover:underline">Edit</a>
                                             <form action="{{ route('category.destroy', $category) }}" method="Post">
                                                 @csrf
                                                 @method('DELETE')
