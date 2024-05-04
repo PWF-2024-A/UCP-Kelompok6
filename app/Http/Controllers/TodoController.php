@@ -69,7 +69,7 @@ class TodoController extends Controller
     {
         $request->validate([
             'title' => 'required|max:255',
-            'category_id' => $request->category_id,
+            
         ]);
 
         // Proctical
@@ -79,6 +79,7 @@ class TodoController extends Controller
         // Eloquent Way - Readable
         $todo->update([
             'title' => ucfirst($request->title),
+            'category_id' => $request->category_id
         ]);
 
         return redirect()->route('todo.index')->with('success', 'Todo updated successfully!');
